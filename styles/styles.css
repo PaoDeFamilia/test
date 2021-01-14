@@ -37,7 +37,7 @@ html, body{
 .navbar-right {
     float: right;
 }
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 390px) {
     .navbar a{
         float: none;
         display: block;
