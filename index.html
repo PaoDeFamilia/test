@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="img/icon.png">
 </head>
 
-<script type="text/javascript" src="styles/styles.js"></script>
+<script type="text/javascript" src="styles/style.js"></script>
 
 <body onload="themeLoaded();">
     <nav class="navbar">
@@ -22,7 +22,20 @@
             </svg></a>
         </div>
     </nav>
-
-
+    <br>
+    <div class="container">
+        <form class="form-container" action="nova" method="POST">
+            <div class="form-group">
+                <label form="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" class="form-control" placeholder="nome">
+                <label form="senha">Senha: </label>
+                <input type="password" id="senha" name="senha" class="form-control" placeholder="senha">
+                <br>
+                <center>
+                    <button type="submit" class="btn-main mr">Sign In</button><button type="reset" class="btn-2">Sign Up</button>
+                </center>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

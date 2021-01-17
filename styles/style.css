@@ -1,0 +1,279 @@
+:root {
+    --bg-color: #fff;
+    --bg-color-2: #191919;
+    --nav-bg-color: rgba(0, 0, 0, 0.1);
+    --text-color: #000;
+    --text-color-2: #fff;
+    --border-color: #191919;
+    --btn-main-color: #66d4ff;
+    --btn-2-color: #fc69d7;
+    --linear-gradient: linear-gradient(90deg, rgba(0, 255, 255, 0.03) 0%, rgba(255, 20, 145, 0.03) 100%);
+}
+.dark-mode:root {
+    --bg-color: #191919;
+    --bg-color-2: #ddd;
+    --nav-bg-color: rgba(255, 255, 255, 0.1);
+    --text-color: #fff;
+    --text-color-2: #000;
+    --border-color: #ddd;
+    --btn-main-color: cyan;
+    --btn-2-color: deeppink;
+}
+html, body {
+    margin: 0;
+    font-family: arial;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+/*margin padding*/
+.mr {
+    margin-right: 10px !important;
+}
+
+/* Header */
+.navbar {
+    overflow: hidden;
+    padding: 10px 10px;
+}
+.navbar {
+    background-color: var(--nav-bg-color);
+}
+.navbar a {
+    float: left;
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 10px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 0;
+    border-radius: 4px;
+}
+.navbar a:hover, .navbar a:focus {
+    background-color: var(--nav-bg-color);
+    outline: none; 
+}
+.navbar-right {
+    float: right;
+}
+@media screen and (max-width: 397px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .navbar-right {
+        float: none;
+    }
+}
+
+.navbar a.btn-theme {
+    margin-top: 10;
+    padding: 10px 10px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/*Conteiners*/
+.body-container {
+    margin: 20px 30px 0 20px;
+}
+.container {
+    margin: 0 30px 0 20px;
+}
+
+/*Button Styles*/
+.btn {
+    border-radius:5px;
+    border: 1px solid var(--border-color);
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--text-color);
+    padding: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--bg-color-2);
+    color: var(--text-color-2);
+}
+.btn:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px var(--text-color);
+}
+.btn-main {
+    border-radius:5px;
+    border: 1px solid var(--btn-main-color);
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--btn-main-color);
+    padding: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+.btn-main:hover {
+    background-color: var(--btn-main-color);
+    color: var(--bg-color);
+}
+.btn-main:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px var(--btn-main-color);
+}
+.btn-2 {
+    border-radius:5px;
+    border: 1px solid var(--btn-2-color);
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--btn-2-color);
+    padding: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+.btn-2:hover {
+    background-color: var(--btn-2-color);
+    color: var(--bg-color);
+}
+.btn-2:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px var(--btn-2-color);
+}
+.btn-cyan {
+    border-radius:5px;
+    border: 1px solid cyan;
+    background-color: rgba(0, 0, 0, 0);
+    color: cyan;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+.btn-cyan:hover {
+    background-color: cyan;
+    color: var(--bg-color);
+}
+.btn-cyan:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px cyan;
+}
+.btn-deeppink {
+    border-radius:5px;
+    border: 1px solid deeppink;
+    background-color: rgba(0, 0, 0, 0);
+    color: deeppink;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+.btn-deeppink:hover {
+    background-color: deeppink;
+    color: var(--bg-color);
+}
+.btn-deeppink:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px deeppink;
+}
+.btn-lightgreen {
+    border-radius:5px;
+    border: 1px solid lightgreen;
+    background-color: rgba(0, 0, 0, 0);
+    color: lightgreen;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+.btn-lightgreen:hover {
+    background-color: lightgreen;
+    color: var(--bg-color);
+}
+.btn-lightgreen:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px lightgreen;
+}
+.btn-blue {
+    border-radius:5px;
+    border: 1px solid blue;
+    background-color: rgba(0, 0, 0, 0);
+    color: blue;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+.btn-blue:hover {
+    background-color: blue;
+    color: var(--bg-color);
+}
+.btn-blue:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px blue;
+}
+.btn-red {
+    border-radius:5px;
+    border: 1px solid red;
+    background-color: rgba(0, 0, 0, 0);
+    color: red;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+.btn-red:hover {
+    background-color: red;
+    color: var(--bg-color);
+}
+.btn-red:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px red;
+}
+
+/*Forms*/
+.form-container {
+    margin: auto;
+    width:50%;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius:5px;
+    background: var(--linear-gradient);
+    background-size: 400% 400%;
+
+    animation: GradientAnimation 10s ease infinite;
+}
+@keyframes GradientAnimation {
+    0%{background-position:10% 50%}
+    50%{background-position:55% 50%}
+    100%{background-position:10% 50%}
+}
+
+@media screen and (max-width: 1100px) {
+    .form-container {
+        width:66%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .form-container {
+        width:100%;
+        border: none;
+        padding: 0;
+        background: transparent;
+    }
+}
+.form-control {
+    border-radius:5px;
+    border: 1px solid var(--border-color);
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--text-color);
+    width: 98%;
+    padding: 5px;
+    margin: 5px 0 10px 0;
+    display: block;
+    font-size: 15px;
+}
+
+.navbar a.logo{
+    padding: 5px;
+}
+.navbar a.logo img {
+    height: 30px;
+}
